@@ -1,0 +1,74 @@
+﻿@page
+@model ContactModel
+@{
+    ViewData["Title"] = "Contact";
+}
+<!--<h2>@ViewData["Title"]</h2>-->
+<!--<h3>@Model.Message</h3>-->
+<p></p>
+<address>
+    One University Drive<br />
+    Shreveport, LA 71105<br />
+    <abbr title="Phone">P:</abbr>
+    318-797-5000
+</address>
+
+<address>
+    <strong>Support:</strong> <a href="mailto:rosss80@lsus.edu">Dont Email Me Please</a><br />
+
+</address>
+<form id="ContactUsForm" name="ContactUsForm"  action="mailto:rosss80@lsus.edu"method="post" enctype="text/plain" >
+  
+        <h1>Contact Us</h1>
+        <table width="500" height="247" border="0" cellpadding="0">
+            <tr>
+                <td width="100">
+                    <div align="right">
+                        <label for="fName2">First Name &nbsp;</label>
+                    </div>
+                </td>
+                <td width="287"><input type="text" name="fName" id="fName2" /></td>
+            </tr>
+            <tr>
+                <td>
+                    <div align="right">
+                        <label for="lName2">Last Name &nbsp;</label>
+                    </div>
+                </td>
+                <td><input type="text" name="lName" id="lName2" /></td>
+            </tr>
+            <tr>
+                <td>
+                    <div align="right">
+                        <label for="Email2">Email &nbsp;</label>
+                    </div>
+                </td>
+                <td>
+                    <input type="text" name="Email" id="Email2" />
+                </td>
+            </tr>
+            <tr>
+
+                <td>
+                    <div align="right">
+                        <label for="ContactReason">Contact Reason &nbsp;</label>
+                    </div>
+                </td>
+                <td>
+                    <textarea name="ContactReason" id="ContactReason" cols="45" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                    <div align="right">
+                        <input type="submit" name="Submit" id="Submit" value="Submit" />
+                        <label for="Submit"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <p>&nbsp;</p>
+
+    </form>
+
